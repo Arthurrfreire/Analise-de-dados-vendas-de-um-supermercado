@@ -1,23 +1,57 @@
-# Analise de dados-vendas de um supermercado
- Utilizando Python para analisar uma dataset relacionado a vendas de um supermercado
+## Análise Exploratória de Dados de Vendas (EDA)
 
-Resumo da Análise:
-O objetivo desta análise foi investigar a relação entre a visibilidade do produto na loja e as vendas médias. Utilizamos dados do conjunto de treinamento do Big Mart Sales para explorar essa relação e identificar possíveis padrões.
+Este projeto realiza uma Análise Exploratória de Dados (EDA) em um conjunto de dados de vendas, com foco em entender os fatores que influenciam as vendas em diferentes lojas.
+Estrutura do Projeto
 
-Visualização dos Dados:
-Ao plotar um gráfico de dispersão das vendas em relação à visibilidade do produto, observamos uma distribuição dos pontos que nos permitiu examinar a relação entre essas variáveis.
+    Train-Set.csv: Arquivo de dados de treinamento.
+    README.md: Este arquivo de documentação.
+    exploratory_data_analysis.ipynb: Notebook Jupyter com o código Python para a análise.
 
-Interpretação dos Resultados:
-A partir da visualização dos dados, não identificamos uma relação linear clara entre a visibilidade do produto e as vendas. Embora haja uma dispersão considerável nos dados, não há uma tendência óbvia de aumento ou diminuição das vendas com o aumento da visibilidade do produto.
+## Dependências
 
-Limitações da Análise:
-É importante reconhecer que esta análise considerou apenas a visibilidade do produto como variável independente, deixando de lado outros fatores que podem influenciar as vendas, como preço, promoções, concorrência, entre outros. Além disso, a qualidade dos dados e a representatividade da amostra também podem afetar os resultados da análise.
+Certifique-se de ter as seguintes bibliotecas Python instaladas:
 
-Implicações Práticas:
-Os resultados indicam que a relação entre a visibilidade do produto e as vendas pode ser mais complexa do que o esperado. Enquanto a visibilidade pode desempenhar um papel importante, há outros fatores a serem considerados ao tentar aumentar as vendas nas lojas.
+    pandas
+    matplotlib
 
-Recomendações:
-Recomendamos uma análise mais aprofundada, incluindo outras variáveis relevantes, para entender melhor os determinantes das vendas nas lojas. Além disso, sugerimos que a empresa avalie estratégias adicionais para impulsionar as vendas, como ajustes na precificação, promoções específicas de produtos e estratégias de marketing direcionadas.
+## Processo de Análise
 
-Conclusão:
-Em resumo, embora a visibilidade do produto seja importante, esta análise destaca a necessidade de uma abordagem holística ao planejar estratégias de vendas nas lojas. É essencial considerar uma variedade de fatores para entender completamente os padrões de compra dos consumidores e desenvolver iniciativas eficazes para impulsionar as vendas e o crescimento do negócio.
+    Carregamento dos Dados:
+        O conjunto de dados Train-Set.csv é lido em um DataFrame Pandas.
+
+    Análise Descritiva:
+        Visualização das primeiras linhas e estatísticas descritivas das variáveis numéricas.
+        Contagem de valores únicos nas variáveis categóricas.
+
+    Visualização de Dados:
+        Gráfico de barras da média de vendas por loja (OutletID).
+        Gráfico de dispersão entre o preço máximo de varejo (MRP) e as vendas (OutletSales).
+        Gráfico de barras das vendas médias por tipo de produto (ProductType).
+        Gráfico de barras das vendas médias por tamanho da loja (OutletSize).
+        Gráfico de barras das vendas médias por tipo de localização da loja (LocationType).
+        Gráfico de barras das vendas médias por ano de estabelecimento da loja (EstablishmentYear).
+        Gráfico de dispersão entre a visibilidade do produto (ProductVisibility) e as vendas (OutletSales).
+
+## Interpretação dos Resultados
+
+## A análise revela:
+
+    Vendas por Loja: Há uma variação significativa nas vendas médias entre as diferentes lojas.
+    
+    MRP e Vendas: Uma relação positiva moderada é observada entre o MRP e as vendas.
+    
+    Tipo de Produto: O tipo de produto influencia as vendas médias.
+    
+    Tamanho da Loja: O tamanho da loja parece ter um impacto nas vendas médias.
+    
+    Localização da Loja: O tipo de localização da loja também afeta as vendas médias.
+    
+    Ano de Estabelecimento: Lojas estabelecidas em anos diferentes apresentam vendas médias diferentes.
+    
+    Visibilidade do Produto: A visibilidade do produto parece ter uma influência limitada nas vendas.
+
+## Considerações Finais
+
+Esta análise exploratória fornece insights valiosos sobre os fatores que podem influenciar as vendas em diferentes lojas. As informações obtidas podem ser usadas para aprofundar a análise, construir modelos preditivos, ou desenvolver estratégias de vendas mais eficazes.
+
+**Lembre-se:** A EDA é um processo iterativo, e os resultados podem levar a novas perguntas e a um maior refinamento da análise.
